@@ -51,7 +51,73 @@
 // var age = ((dogAge - 2) * 4) + 21
 // alert("the age of your dog is "+dogAge+" and the human age is "+age)
 
-// INCREMENT AND DECREMENT EXPRESSIONS
+// CREATING AND CALLING FUNCTION
+
+// function greating(){
+//     console.log("hello")
+//     console.log("how are you?")
+// }
+// console.log("hello")
+// greating()
+
+//  PARAMETERS AND ARGUMENTS
+
+// function getMilk(bottle){
+//     console.log("leave house")
+//     console.log("moveRight")
+//     console.log("moveRight")
+//     console.log("moveUp")
+//     console.log("moveUp")
+//     console.log("moveRight")
+//     console.log("moveRight")
+//     console.log("buy "+ bottle +"bottle of milk")
+//     console.log("moveleft")
+//     console.log("moveleft")
+//     console.log("movedown")
+//     console.log("movedown")
+//     console.log("moveleft")
+//     console.log("moveleft")
+//     console.log("enterhouse")
+// }
+// getMilk(12)
+// ===============================
+
+// function getMilk(money){
+//     console.log("leave house")
+//     console.log("moveRight")
+//     console.log("moveRight")
+//     console.log("moveUp")
+//     console.log("moveUp")
+//     console.log("moveRight")
+//     console.log("moveRight")
+
+//     var numberOfBottle =Math.floor(money/1.5);
+//     console.log("buy "+ numberOfBottle +" bottle of milk")
+//     console.log("moveleft")
+//     console.log("moveleft")
+//     console.log("movedown")
+//     console.log("movedown")
+//     console.log("moveleft")
+//     console.log("moveleft")
+//     console.log("enterhouse")
+// }
+// getMilk(5)
+
+// how many days, weeks, and months we have left if we live until 70 years
+life = prompt("enter your age")
+function lifeInWeeks(age){
+    var yearsRemaining = 70 -age;
+    var days = yearsRemaining * 365;
+    var weeks =yearsRemaining * 52;
+    var months =yearsRemaining * 12;
+    var years =yearsRemaining
+    alert("you have "+ days + " days, " + weeks +" weeks , and "+ months +" months " +years+ " years left");
+}
+lifeInWeeks(life)
+
+
+
+
 
 
 
