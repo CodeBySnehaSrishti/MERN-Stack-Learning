@@ -104,20 +104,91 @@
 // getMilk(5)
 
 // how many days, weeks, and months we have left if we live until 70 years
-life = prompt("enter your age")
-function lifeInWeeks(age){
-    var yearsRemaining = 70 -age;
-    var days = yearsRemaining * 365;
-    var weeks =yearsRemaining * 52;
-    var months =yearsRemaining * 12;
-    var years =yearsRemaining
-    alert("you have "+ days + " days, " + weeks +" weeks , and "+ months +" months " +years+ " years left");
+
+
+// life = prompt("enter your age")
+// function lifeInWeeks(age){
+//     var yearsRemaining = 70 - age;
+//     var days = yearsRemaining * 365;
+//     var weeks =yearsRemaining * 52;
+//     var months =yearsRemaining * 12;
+//     var years =yearsRemaining
+//     alert("you have "+ days + " days, " + weeks +" weeks , and "+ months +" months " +years+ " years left");
+// }
+// lifeInWeeks(life)
+
+// FUNCTION PART 3: OUTPUTS & RETURN VALUES###############################################################
+
+// 1>
+
+// function getMilk(money){
+//     console.log("leave house")
+//     console.log("moveRight")
+//     console.log("moveRight")
+//     console.log("moveUp")
+//     console.log("moveUp")
+//     console.log("moveRight")
+//     console.log("moveRight")
+
+//     var numberOfBottle =Math.floor(money/1.5);
+//     console.log("buy "+ numberOfBottle +" bottle of milk")
+//     console.log("moveleft")
+//     console.log("moveleft")
+//     console.log("movedown")
+//     console.log("movedown")
+//     console.log("moveleft")
+//     console.log("moveleft")
+//     console.log("enterhouse")
+//     return money % 1.5 ;
+// }
+// var change = getMilk(4);
+// console.log(change);
+
+
+
+
+// 2>
+
+
+// function getMilk(money){
+//     console.log("leave house")
+//     console.log("moveRight")
+//     console.log("moveRight")
+//     console.log("moveUp")
+//     console.log("moveUp")
+//     console.log("moveRight")
+//     console.log("moveRight")
+//     console.log("buy "+ calcBottles(money,1.5) +" bottles of milk")
+//     console.log("moveleft")
+//     console.log("moveleft")
+//     console.log("movedown")
+//     console.log("movedown")
+//     console.log("moveleft")
+//     console.log("moveleft")
+//     console.log("enterhouse")
+//     return calcChange(money,1.5)
+// }
+// function calcBottles (startingMoney, costPerBottle){
+//     var numberOfBottles =Math.floor (startingMoney, costPerBottle);
+//     return numberOfBottles;
+// }
+// function calcChange(startingAmount, costPerBottle){
+//     var number =change = startingAmount % costPerBottle;
+//     return change;
+// }
+// console.log("hello, master " +  getMilk(5));
+
+
+
+// CHALLENGE :CREATE A BMI CALCULATOR
+
+function bmiCalculator(weight, height){
+    var bmi =weight / Math.pow(height,2);
+    return bmi;
 }
-lifeInWeeks(life)
 
-
-
-
+var bmi = bmiCalculator(65 , 1.8);
+console.log(bmi)
 
 
 
