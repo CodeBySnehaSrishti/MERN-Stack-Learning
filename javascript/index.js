@@ -184,10 +184,9 @@
 
 function bmiCalculator(weight, height){
     var bmi =weight / Math.pow(height,2);
-    return math.round(bmi); 
+    return Math.round(bmi); 
 }
-
-var bmi = bmiCalculator(65 , 1.8);
+var bmi = bmiCalculator(55 , 1.73);
 console.log(bmi)
 
 
