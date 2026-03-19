@@ -119,7 +119,7 @@
 
 // FUNCTION PART 3: OUTPUTS & RETURN VALUES###############################################################
 
-// 1>
+// ex.1>
 
 // function getMilk(money){
 //     console.log("leave house")
@@ -147,7 +147,7 @@
 
 
 
-// 2>
+// ex.2>
 
 
 // function getMilk(money){
@@ -182,9 +182,29 @@
 
 // CHALLENGE :CREATE A BMI CALCULATOR
 
-function calculator(){
-    
-}
+// function bmiCalculator(weight ,height){
+//     var bmi =weight / Math.pow(height,2);
+//     return Math.round(bmi); 
+// }
+// var bmi = bmiCalculator(55 , 1.73);
+// console.log(bmi)
+
+
+// RANDOM NUMBER GENERATION IN JS 
+
+// EX.1 > 
+// var n = Math.random();
+// n = n*6;
+// n = Math.floor(n)+1;
+// console.log(n);
+
+// EX.2
+
+// prompt("enter your name")
+// prompt("enter your crush name")
+// var loveScore = Math.random() * 100;
+// var score = Math.floor(loveScore) +1
+// alert("your love score is " + score +" % ")
 
 
 
@@ -192,26 +212,68 @@ function calculator(){
 
 
 
+// CONTROL STATEMENT:
 
+// prompt("enter your name")
+// prompt("enter your their name")
+// var loveScore = Math.random() * 100;
+// var score = Math.floor(loveScore) + 1;
+// if (score > 70) {
+//     alert("your score is " + score + " you love each other ")
+// }
+// if (score > 30 && score <= 70) {
+//     alert("your score is " + score + "% you  are just good friend")
+// }
+// if (score <= 30){
+//     alert("your score is " + score + " % you are toggether like oil and water")
+// }
+// prompt("enter your name")
+// prompt("enter their name")
+// var loveScore = Math.random() * 100;
+// var loveScore = Math.floor(loveScore) + 1;
+// if(loveScore > 70){
+//     alert ("your score is "+loveScore+" % you love each other"  )
+// }
+// if(loveScore > 30 && love <=70 ){
+//     alert ("your score is "+loveScore+" % you are just good friend"  )
+// }
 
+// if(loveScore <= 30 ){
+//     alert ("your score is "+loveScore+" % you are togather like oil and water"  )
+// }
+// var year = prompt("enter year to find leap year !")
+// function isLeap(year) {
+//     if (year % 4 === 0) {
+//         if (year % 100 === 0) {
+//             if (year % 400 === 0) {
+//             return "leap year"
+//             }
+//             else {
+//                 return "Not leap year."
+//             }
+//         }
+//         else {
+//             return "Not leap year."
+//         }
+//     }
+//     else {
+//         return "Not leap year."
+//     }
+// }
+// var result = isLeap(year)
+// alert("year is "+result)
 
+// COLLECTION WORKING WITH JS ARRAY
 
+// var guestList = ["sneha", "srishti", "kishu", "shriyansh", "shashwat", "megha"]
+// var guestName = prompt("what is your name ? ")
+// guestList.includes(guestName)
 
-
-
-
-
-function bmiCalculator(weight, height){
-    var bmi =weight / Math.pow(height,2);
-    return Math.round(bmi); 
-}
-var bmi = bmiCalculator(55 , 1.73);
-console.log(bmi)
-
-
-
-
-
+// if (guestList.includes(guestName)) {
+//     alert("welcome !")
+// } else {
+//     alert("sorry, maybe next time")
+// }
 
 
 
