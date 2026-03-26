@@ -184,15 +184,15 @@
 
 // function bmiCalculator(weight ,height){
 //     var bmi =weight / Math.pow(height,2);
-//     return Math.round(bmi); 
+//     return Math.round(bmi);
 // }
 // var bmi = bmiCalculator(55 , 1.73);
 // console.log(bmi)
 
 
-// RANDOM NUMBER GENERATION IN JS 
+// RANDOM NUMBER GENERATION IN JS
 
-// EX.1 > 
+// EX.1 >
 // var n = Math.random();
 // n = n*6;
 // n = Math.floor(n)+1;
@@ -275,6 +275,20 @@
 //     alert("sorry, maybe next time")
 // }
 
+
+// var nameList = ["sneha", "srishti" ,"kishu", "megha" ,"shriyansh", "shashwat"]
+
+// var guestName = prompt("enter your name ")
+
+// nameList.includes(guestName)
+
+// if(nameList.includes(guestName)){
+//     alert("you are welcome")
+// }else{
+//     alert("you are not welcome")
+// }
+
+
 // ADDING ELEMENTS AND INTERMEDIATE ARRAY TECHNIQUEE
 
 // var output =[];
@@ -290,21 +304,23 @@
 // var output = [];
 // var count = 1;
 // function fizzBuzz() {
-//     if (count % 3 === 0 && count % 5 === 0) {
-//         output.push("FizzBuzz");
-//     } else if (count % 3 === 0) {
-//         output.push("Fizz");
-//     } else if (count % 5 === 0) {
-//         output.push("Buzz");
-//     } else {
-//         output.push(count);
-//     }
-//     count++;
-//     console.log(output);
+
+//   if (count % 3 === 0 && count % 5 === 0) {
+//             output.push("FizzBuzz");
+//         } else if (count % 3 === 0) {
+//             output.push("Fizz");
+//         } else if (count % 5 === 0) {
+//             output.push("Buzz");
+//         } else {
+//             output.push(count);
+//         }
+//         count++;
+//  console.log(output);
 // }
 
 
 // WHO'S BUYING LUNCH
+
 
 // var names = ["sneha", "srishti", "kishu", "shriyansh", "shashwat", "megha"];
 // function whoPaying(names) {
@@ -317,12 +333,14 @@
 // console.log(result);
 
 
-// FIZZBUZZ PROBLEM (white loop)
+// FIZZBUZZ PROBLEM (while loop)
+
+
 
 // var output = [];
 // var count = 1;
 // function fizzBuzz() {
-//     while (count <= 20) {
+//     while (count <= 10) {
 //         if (count % 3 === 0 && count % 5 === 0) {
 //             output.push("FizzBuzz");
 //         } else if (count % 3 === 0) {
@@ -332,17 +350,23 @@
 //         } else {
 //             output.push(count);
 //         }
-//         // count++;
+//         count++;
 //     }
 //     console.log(output);
 // }
 
-// CONTROL STATEMENTS : FOR LOOPS 
 
+
+
+
+
+
+
+// CONTROL STATEMENTS : FOR LOOPS
 
 // var output = [];
 // function fizzBuzz() {
-//     for (var count = 1; count < 20, count++;) {
+//     for (var count = 1; count < 20; count++) {
 //         if (count % 3 === 0 && count % 5 === 0) {
 //             output.push("FizzBuzz");
 //         } else if (count % 3 === 0) {
@@ -357,7 +381,11 @@
 // }
 
 
+
+
 // FIBONACCI CHALLENGE
+
+
 
 // function fibonacciGenerator(n) {
 //     var output = [];
@@ -369,15 +397,91 @@
 //     }
 //     else {
 //         output = [0, 1];
-//         for (var i = 2; i < n; i++){
-//             output.push(output[output.length - 2] + output[output.length - 1]);
+//         for (var i = 2; i < n; i++) {
+//             output.push(output[output.length - 2] +
+//             output   [output.length - 1]);
+//         }
 //     }
+//     return output;
 // }
-// return output;
-// }
-// output =fibonacciGenerator(5);
+// output = fibonacciGenerator(1);
 // console.log(output)
 
+// HIGHER ORDER FUNCTION
+
+
+//  JS OBJECT
+
+
+// var housekeeper1={
+//    workExpericence : 2,
+//    specialisation:"cleaning",
+//    excompanynme:"blabla",
+// }
+
+
+// CONSTRUCTOR FUNCTION
+
+// function housekeeper1 ( workExpericence,  specialisation ,  excompanynme){
+//     this.workExpericence = workExpericence;
+//     this.specialisation = specialisation ;
+//     this.excompanynme =  excompanynme;
+// }
+
+// INITIALISE OBJECT
+// var  housekeeper1 = new housekeeper2(2,"cleaning", ["blabla", "hahaha" ] );
+
+
+// var housekeeper1 = {
+//     yearsOfExpericence: 12,
+//     names: "jane",
+//     cleaningRepertoire: ["bathroom", "lobby", "bedroom"],
+// }
+// var HouseKeeper function (yearsOfExpericence, names, cleaningRepertoire){
+//     this.yearsOfExpericence = yearsOfExpericence;
+//     this.names = names;
+//     this.cleaningRepertoire = cleaningRepertoire;
+// }
+
+//OBJECT , METHODS DOT NOTION
+
+// var HouseKeeper =function(yearsOfExpericence, names, cleaningRepertoire){
+//     this.yearsOfExpericence = yearsOfExpericence;
+//     this.names = names;
+//     this.cleaningRepertoire = cleaningRepertoire;
+//     this.clean = function(){
+//         alert("cleaning in progress")
+//     }
+// }
+
+// CALLBACK FUNCTION
+
+// document.addEventListener("keypress", respondToKey(e));
+// function respondToKey(e){
+//     console.log("key pressed");
+// }
+
+
+// CALL EVENTLISTERNER  FUNCTION
+
+// function anotherAddEventListener(typeOfEvent, Callback) {
+//     var eventThatHappened = {
+//         eventType: "keypress",
+//         key: "p",
+//         durationOfkeypress: 2,
+//     }
+//     if (eventThatHappened.eventType === typeOfEvent) {
+//         Callback(eventThatHappend);
+//     }
+// }
+
+// anotherAddEventListener("keypress", function(event){
+//     console.log(event);
+// })
+
+// document.addEventListener("keypress",function(event){
+//     console.log(event)
+// })
 
 
 
